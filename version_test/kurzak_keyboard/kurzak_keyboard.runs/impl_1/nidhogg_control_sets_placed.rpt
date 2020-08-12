@@ -1,0 +1,83 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed Aug 12 19:30:27 2020
+| Host         : LAPTOP-269KMLDC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file nidhogg_control_sets_placed.rpt
+| Design       : nidhogg
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    60 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              27 |           12 |
+| No           | No                    | Yes                    |              98 |           38 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              66 |           26 |
+| Yes          | No                    | Yes                    |              12 |            2 |
+| Yes          | Yes                   | No                     |               9 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+---------------------------------------------+---------------------------------------+------------------+----------------+
+|            Clock Signal           |                Enable Signal                |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++-----------------------------------+---------------------------------------------+---------------------------------------+------------------+----------------+
+|  my_clk/inst/clk_50MHz            | my_keyboard/uut/db_clk/O_i_1_n_0            |                                       |                1 |              1 |
+|  my_clk/inst/clk_50MHz            | my_keyboard/uut/db_clk/clear                |                                       |                1 |              1 |
+|  my_clk/inst/clk_50MHz            | my_keyboard/uut/db_data/Iv_i_1__0_n_0       |                                       |                1 |              1 |
+|  my_clk/inst/clk_50MHz            | my_keyboard/uut/db_data/O_i_1__0_n_0        |                                       |                1 |              1 |
+| ~my_keyboard/uut/db_clk/kclkf     | my_keyboard/uut/cnt                         | my_keyboard/uut/cnt[3]_i_1_n_0        |                1 |              4 |
+|  my_clk/inst/clk_50MHz            | my_keyboard/uut/db_data/count[4]_i_1__0_n_0 | my_keyboard/uut/db_data/Iv_i_1__0_n_0 |                1 |              5 |
+|  my_clk/inst/clk_50MHz            |                                             |                                       |                3 |              6 |
+|  my_clk/inst/clk_50MHz_clk_en_clk |                                             | rst_IBUF                              |                1 |              8 |
+|  my_clk/inst/clk_50MHz            | my_keyboard/uut/keycode[7]_i_1_n_0          |                                       |                4 |              8 |
+|  my_clk/inst/clk_65MHz_clk_en_clk |                                             | rst_IBUF                              |                1 |              8 |
+| ~my_keyboard/uut/db_clk/kclkf     |                                             |                                       |                3 |              9 |
+|  my_clk/inst/clk_50MHz            |                                             | rst_IBUF                              |                6 |             12 |
+|  my_clk/inst/clk_65MHz            | my_timing/vcount                            | rst_IBUF                              |                2 |             12 |
+|  my_timing/E[0]                   |                                             |                                       |                6 |             12 |
+|  my_clk/inst/clk_65MHz            | my_players/E[0]                             |                                       |               18 |             54 |
+|  my_clk/inst/clk_65MHz            |                                             | rst_IBUF                              |               30 |             70 |
++-----------------------------------+---------------------------------------------+---------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     4 |
+| 4      |                     1 |
+| 5      |                     1 |
+| 6      |                     1 |
+| 8      |                     3 |
+| 9      |                     1 |
+| 12     |                     3 |
+| 16+    |                     2 |
++--------+-----------------------+
+
+

@@ -1,0 +1,212 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed Aug 12 19:30:52 2020
+| Host         : LAPTOP-269KMLDC running 64-bit major release  (build 9200)
+| Command      : report_methodology -file nidhogg_methodology_drc_routed.rpt -pb nidhogg_methodology_drc_routed.pb -rpx nidhogg_methodology_drc_routed.rpx
+| Design       : nidhogg
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 35
++-----------+----------+--------------------------------------------+------------+
+| Rule      | Severity | Description                                | Violations |
++-----------+----------+--------------------------------------------+------------+
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 10         |
+| TIMING-17 | Warning  | Non-clocked sequential cell                | 13         |
+| TIMING-20 | Warning  | Non-clocked latch                          | 12         |
++-----------+----------+--------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance my_image_playerL_head/rgb_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance my_image_playerL_head/rgb_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance my_image_playerL_legs/rgb_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance my_image_playerL_legs/rgb_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance my_image_playerR_head/rgb_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance my_image_playerR_head/rgb_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance my_image_playerR_legs/rgb_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance my_image_playerR_legs/rgb_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance my_image_rom/rgb_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance my_image_rom/rgb_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/cnt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/cnt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/cnt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/cnt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/datacur_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/datacur_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/datacur_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/datacur_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/datacur_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/datacur_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/datacur_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/datacur_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin my_keyboard/uut/flag_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[0] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[10] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[11] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[1] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[2] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[3] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[4] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[5] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[6] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[7] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[8] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch my_background/rgb_out_nxt_reg[9] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+
