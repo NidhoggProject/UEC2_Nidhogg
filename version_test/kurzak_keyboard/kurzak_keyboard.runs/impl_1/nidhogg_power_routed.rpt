@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date             : Wed Aug 12 19:30:53 2020
+| Date             : Thu Aug 13 01:50:23 2020
 | Host             : LAPTOP-269KMLDC running 64-bit major release  (build 9200)
 | Command          : report_power -file nidhogg_power_routed.rpt -pb nidhogg_power_summary_routed.pb -rpx nidhogg_power_routed.rpx
 | Design           : nidhogg
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      474 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      174 |     20800 |            0.84 |
-|   Register     |    <0.001 |      212 |     41600 |            0.51 |
-|   CARRY4       |    <0.001 |       18 |      8150 |            0.22 |
-|   Others       |     0.000 |       28 |       --- |             --- |
-| Signals        |     0.001 |      424 |       --- |             --- |
+| Slice Logic    |    <0.001 |      539 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      187 |     20800 |            0.90 |
+|   CARRY4       |    <0.001 |       30 |      8150 |            0.37 |
+|   Register     |    <0.001 |      242 |     41600 |            0.58 |
+|   Others       |     0.000 |       31 |       --- |             --- |
+| Signals        |     0.002 |      482 |       --- |             --- |
 | Block RAM      |     0.010 |      7.5 |        50 |           15.00 |
 | MMCM           |     0.098 |        1 |         5 |           20.00 |
 | I/O            |    <0.001 |       18 |       106 |           16.98 |
@@ -155,7 +155,7 @@ Table of Contents
 |   my_image_playerR_legs |     0.002 |
 |   my_image_rom          |     0.002 |
 |   my_keyboard           |    <0.001 |
-|     uut                 |    <0.001 |
+|     my_PS2Receiver      |    <0.001 |
 |       db_clk            |    <0.001 |
 |       db_data           |    <0.001 |
 |   my_players            |    <0.001 |

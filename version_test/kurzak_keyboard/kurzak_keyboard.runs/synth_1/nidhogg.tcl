@@ -43,7 +43,7 @@ read_verilog -library xil_defaultlib {
   C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/vga_timing.v
   C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v
 }
-read_ip -quiet c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk.xci
+read_ip -quiet C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk.xci
 set_property used_in_implementation false [get_files -all c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_board.xdc]
 set_property used_in_implementation false [get_files -all c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk.xdc]
 set_property used_in_implementation false [get_files -all c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_late.xdc]

@@ -76,7 +76,7 @@ set rc [catch {
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   add_files -quiet C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/synth_1/nidhogg.dcp
-  read_ip -quiet c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk.xci
+  read_ip -quiet C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk.xci
   read_xdc C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/constrs_1/new/basys.xdc
   link_design -top nidhogg -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
@@ -115,7 +115,7 @@ set rc [catch {
   write_checkpoint -force nidhogg_placed.dcp
   create_report "impl_1_place_report_io_0" "report_io -file nidhogg_io_placed.rpt"
   create_report "impl_1_place_report_utilization_0" "report_utilization -file nidhogg_utilization_placed.rpt -pb nidhogg_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file nidhogg_control_sets_placed.rpt"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -file nidhogg_control_sets_placed.rpt"
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -136,7 +136,7 @@ set rc [catch {
   create_report "impl_1_route_report_methodology_0" "report_methodology -file nidhogg_methodology_drc_routed.rpt -pb nidhogg_methodology_drc_routed.pb -rpx nidhogg_methodology_drc_routed.rpx"
   create_report "impl_1_route_report_power_0" "report_power -file nidhogg_power_routed.rpt -pb nidhogg_power_summary_routed.pb -rpx nidhogg_power_routed.rpx"
   create_report "impl_1_route_report_route_status_0" "report_route_status -file nidhogg_route_status.rpt -pb nidhogg_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file nidhogg_timing_summary_routed.rpt -warn_on_violation  -rpx nidhogg_timing_summary_routed.rpx"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -file nidhogg_timing_summary_routed.rpt -warn_on_violation  -rpx nidhogg_timing_summary_routed.rpx"
   create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file nidhogg_incremental_reuse_routed.rpt"
   create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file nidhogg_clock_utilization_routed.rpt"
   close_msg_db -file route_design.pb

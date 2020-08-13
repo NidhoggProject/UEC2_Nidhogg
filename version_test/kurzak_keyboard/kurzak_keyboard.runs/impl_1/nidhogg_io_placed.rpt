@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date                      : Wed Aug 12 19:30:27 2020
+| Date                      : Thu Aug 13 01:49:37 2020
 | Host                      : LAPTOP-269KMLDC running 64-bit major release  (build 9200)
 | Command                   : report_io -file nidhogg_io_placed.rpt
 | Design                    : nidhogg

@@ -27,11 +27,15 @@ module keyboard(
     input wire PS2Clk,
     input wire [11:0] rgb_in,
     output reg [1:0] key,
-    output reg [11:0] rgb_out
+    output reg [11:0] rgb_out,
+    output reg [11:0] LP_x_pos,
+    output reg [11:0] RP_x_pos
     );
     
 wire [15:0] keycode;
 reg [11:0] rgb_out_nxt;
+reg [11:0] LP_x_pos_nxt;
+reg [11:0] RP_x_pos_nxt = 885;
 wire flag;   
    
 //----------------------
@@ -52,7 +56,7 @@ localparam RP_SWORD_DOWN                = 8'h72;    //press:    arrow down
 localparam RP_THROW_OR_PICK_UP_SWORD    = 8'h59;    //press:    shift right
 localparam RP_JUMP                      = 8'h5A;    //press:    enter
 
-  PS2Receiver uut (
+  PS2Receiver my_PS2Receiver (
     .clk(clk_50MHz),
     .kclk(PS2Clk),
     .kdata(PS2Data),
@@ -70,18 +74,20 @@ localparam RP_JUMP                      = 8'h5A;    //press:    enter
   always@(posedge clk_50MHz, posedge rst)
     begin
     if (rst)
-        rgb_out <= 0;
+        rgb_out  <= 0;
     else
-        rgb_out <= rgb_out_nxt;
+        rgb_out  <= rgb_out_nxt;
+        RP_x_pos <= RP_x_pos_nxt;
     end
 
   always@(*)
     case (keycode[7:0])
       RP_GO_RIGHT: begin
-        rgb_out_nxt = 12'h6_f_f;
+      
       end
       RP_GO_LEFT: begin
-        rgb_out_nxt = 12'hf_f_6;
+        RP_x_pos_nxt = RP_x_pos - 1;
+        rgb_out_nxt = rgb_in;
       end
       default: begin
         rgb_out_nxt = rgb_in;

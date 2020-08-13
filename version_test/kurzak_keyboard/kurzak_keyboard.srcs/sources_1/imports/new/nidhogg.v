@@ -102,6 +102,10 @@ module nidhogg(
     wire [11:0] rgb_pixel_playerR_head, address_pix_playerR_head, rgb_pixel_playerR_legs, address_pix_playerR_legs;
     wire [11:0] xpos_playerL, ypos_playerL;
 
+/*=====================================*\
+*           BACKGROUND
+\*=====================================*/
+
     background my_background(
         .clk(pclk),
         .reset(rst),
@@ -124,6 +128,9 @@ module nidhogg(
         .rgb_out(rgb_b)
     );
 
+/*=====================================*\
+*           ROM
+\*=====================================*/
     
     image_rom my_image_rom(
         .clk(pclk),
@@ -136,6 +143,11 @@ module nidhogg(
     wire [11:0] vcount_c;
     wire vsync_c, vblnk_c, hsync_c, hblnk_c;
     wire [11:0] rgb_c;
+    wire [11:0] LP_x_pos, RP_x_pos;
+    
+/*=====================================*\
+*           PLAYERS
+\*=====================================*/
     
     players my_players(
         .clk(pclk),
@@ -150,7 +162,7 @@ module nidhogg(
         .hcount_in(hcount_b),
         .hsync_in(hsync_b),
         .hblnk_in(hblnk_b),
-        .rgb_in(rgb_b),
+        .rgb_in(rgb_x),
         .rgb_pixel_playerL_head(rgb_pixel_playerL_head),
         .rgb_pixel_playerL_legs(rgb_pixel_playerL_legs),
         .rgb_pixel_playerR_head(rgb_pixel_playerR_head),
@@ -165,10 +177,16 @@ module nidhogg(
         .pixel_addr_playerL_legs(address_pix_playerL_legs),
         .pixel_addr_playerR_head(address_pix_playerR_head),
         .pixel_addr_playerR_legs(address_pix_playerR_legs),
-        .rgb_out(rgb_x)
+        .rgb_out({r,g,b}),
+        .LP_x_pos(LP_x_pos),
+        .RP_x_pos(RP_x_pos)
  //       .xpos_playerL(xpos_playerL),
  //       .ypos_playerL(ypos_playerL)
     );
+    
+/*=====================================*\
+*           ROM
+\*=====================================*/    
     
     image_rom_player #(.picture("../../playerL_gora1.data")) my_image_playerL_head (
         .clk(pclk),
@@ -205,15 +223,22 @@ module nidhogg(
         .ypos_playerL_out(ypos_playerL)
     );*/
 
+/*=====================================*\
+*           KEYBOARD
+\*=====================================*/
+
     wire [1:0] key_in;
+    
     keyboard my_keyboard(
       .clk_50MHz(kclk),
       .rst(rst),
       .PS2Data(PS2Data),
       .PS2Clk(PS2Clk),
       .key(key_in),
-      .rgb_in(rgb_x),
-      .rgb_out({r,g,b})
+      .rgb_in(rgb_b),
+      .rgb_out(rgb_x),
+      .LP_x_pos(LP_x_pos),
+      .RP_x_pos(RP_x_pos)
     );
     
 endmodule

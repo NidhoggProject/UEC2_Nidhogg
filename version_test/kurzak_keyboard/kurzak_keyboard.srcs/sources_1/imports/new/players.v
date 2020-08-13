@@ -40,6 +40,8 @@ module players(
     input wire [11:0] rgb_pixel_playerR_legs,
 //    input wire [11:0] xpos_playerL,
 //    input wire [11:0] ypos_playerL,
+    input wire [11:0] LP_x_pos,
+    input wire [11:0] RP_x_pos,
     output reg [11:0] vcount_out,
     output reg vsync_out,
     output reg vblnk_out,
@@ -73,9 +75,9 @@ module players(
     assign ypos_playerL = 600;
     assign xpos_playerL_legs = xpos_playerL;
     assign ypos_playerL_legs = ypos_playerL + 64;
-    assign xpos_playerR = (949 - 64) - left_counter + right_counter;
+    //assign xpos_playerR = (949 - 64) - left_counter + right_counter;
     assign ypos_playerR = 600;
-    assign xpos_playerR_legs = xpos_playerR;
+    //assign xpos_playerR_legs = xpos_playerR;
     assign ypos_playerR_legs = ypos_playerR + 64;
 
     
@@ -145,10 +147,12 @@ module players(
             if(~vblnk_in & ~hblnk_in)
             begin
                 //if ((vcount_in <= ypos_playerL + HEIGHT) && (vcount_in >= ypos_playerL) && (hcount_in <= xpos_playerL + WIDTH) && (hcount_in >= xpos_playerL) && (rgb_pixel_playerL_head != 12'h198)) rgb_out_nxt <= rgb_pixel_playerL_head;
+                //LEFT PLAYER
                 if ((vcount_in <= ypos_playerL + HEIGHT - 1) && (vcount_in >= ypos_playerL ) && (hcount_in <= xpos_playerL + WIDTH + 1) && (hcount_in >= xpos_playerL + 2) && (rgb_pixel_playerL_head != 12'h198)) rgb_out_nxt <= rgb_pixel_playerL_head;         
                 else if ((vcount_in <= ypos_playerL_legs + HEIGHT - 1) && (vcount_in >= ypos_playerL_legs ) && (hcount_in <= xpos_playerL_legs + WIDTH + 1) && (hcount_in >= xpos_playerL_legs + 2) && (rgb_pixel_playerL_legs != 12'h198)) rgb_out_nxt <= rgb_pixel_playerL_legs;         
-                else if ((vcount_in <= ypos_playerR + HEIGHT - 1) && (vcount_in >= ypos_playerR ) && (hcount_in <= xpos_playerR + WIDTH + 1) && (hcount_in >= xpos_playerR + 2) && (rgb_pixel_playerR_head != 12'h198)) rgb_out_nxt <= rgb_pixel_playerR_head;         
-                else if ((vcount_in <= ypos_playerR_legs + HEIGHT - 1) && (vcount_in >= ypos_playerR_legs ) && (hcount_in <= xpos_playerR_legs + WIDTH + 1) && (hcount_in >= xpos_playerR_legs + 2) && (rgb_pixel_playerR_legs != 12'h198)) rgb_out_nxt <= rgb_pixel_playerR_legs;
+                //RIGHT PLAYER
+                else if ((vcount_in <= ypos_playerR + HEIGHT - 1) && (vcount_in >= ypos_playerR ) && (hcount_in <= RP_x_pos + WIDTH + 1) && (hcount_in >= RP_x_pos + 2) && (rgb_pixel_playerR_head != 12'h198)) rgb_out_nxt <= rgb_pixel_playerR_head;         
+                else if ((vcount_in <= ypos_playerR_legs + HEIGHT - 1) && (vcount_in >= ypos_playerR_legs ) && (hcount_in <= RP_x_pos + WIDTH + 1) && (hcount_in >= RP_x_pos + 2) && (rgb_pixel_playerR_legs != 12'h198)) rgb_out_nxt <= rgb_pixel_playerR_legs;
                 //else if (picture_display(xpos_playerR_legs, ypos_playerR_legs, HEIGHT, WIDTH, rgb_pixel_playerR_legs)) rgb_out_nxt <= rgb_pixel_playerR_legs;
                 else rgb_out_nxt <= rgb_in;
             end

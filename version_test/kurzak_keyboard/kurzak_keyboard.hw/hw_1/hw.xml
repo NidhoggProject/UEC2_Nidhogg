@@ -10,7 +10,7 @@
       <Properties Property="FULL_PROBES.FILE" value=""/>
       <Properties Property="PROBES.FILE" value=""/>
       <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/nidhogg.bit"/>
-      <Properties Property="SLR.COUNT" value="c:/Users/Przemysław Kurzak/Desktop/kurzak_keyboard/UEC2_Nidhogg-Dwornik_players_rom/Game_stable/1"/>
+      <Properties Property="SLR.COUNT" value="C:/Users/Przemysław Kurzak/AppData/Roaming/Xilinx/Vivado/1"/>
     </Object>
   </ObjectList>
   <probeset name="hw project" active="false"/>

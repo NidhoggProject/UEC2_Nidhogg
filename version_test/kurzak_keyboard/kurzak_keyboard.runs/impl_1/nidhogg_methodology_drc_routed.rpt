@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Wed Aug 12 19:30:52 2020
+| Date         : Thu Aug 13 01:50:22 2020
 | Host         : LAPTOP-269KMLDC running 64-bit major release  (build 9200)
 | Command      : report_methodology -file nidhogg_methodology_drc_routed.rpt -pb nidhogg_methodology_drc_routed.pb -rpx nidhogg_methodology_drc_routed.rpx
 | Design       : nidhogg
@@ -23,13 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 35
+             Violations found: 71
 +-----------+----------+--------------------------------------------+------------+
 | Rule      | Severity | Description                                | Violations |
 +-----------+----------+--------------------------------------------+------------+
 | SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 10         |
+| TIMING-16 | Warning  | Large setup violation                      | 12         |
 | TIMING-17 | Warning  | Non-clocked sequential cell                | 13         |
-| TIMING-20 | Warning  | Non-clocked latch                          | 12         |
+| TIMING-20 | Warning  | Non-clocked latch                          | 36         |
 +-----------+----------+--------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -84,69 +85,129 @@ Timing of a block RAM might be sub-optimal
 The timing for the instance my_image_rom/rgb_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -4.427 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[3]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -4.503 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[5]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -4.571 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[1]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -4.584 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[10]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -4.612 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[8]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -4.630 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[2]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -4.630 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[6]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -4.642 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[7]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -4.643 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[9]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -4.645 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[4]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -4.710 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[0]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -4.746 ns between my_keyboard/RP_x_pos_reg[5]/C (clocked by clk_50MHz_clk) and my_players/rgb_out_reg[11]/D (clocked by clk_65MHz_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
 TIMING-17#1 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/cnt_reg[0]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/cnt_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#2 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/cnt_reg[1]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/cnt_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#3 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/cnt_reg[2]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/cnt_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#4 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/cnt_reg[3]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/cnt_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#5 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/datacur_reg[0]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/datacur_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#6 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/datacur_reg[1]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/datacur_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#7 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/datacur_reg[2]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/datacur_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#8 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/datacur_reg[3]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/datacur_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#9 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/datacur_reg[4]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/datacur_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#10 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/datacur_reg[5]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/datacur_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#11 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/datacur_reg[6]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/datacur_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#12 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/datacur_reg[7]/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/datacur_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#13 Warning
 Non-clocked sequential cell  
-The clock pin my_keyboard/uut/flag_reg/C is not reached by a timing clock
+The clock pin my_keyboard/my_PS2Receiver/flag_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#1 Warning
@@ -207,6 +268,126 @@ Related violations: <none>
 TIMING-20#12 Warning
 Non-clocked latch  
 The latch my_background/rgb_out_nxt_reg[9] cannot be properly analyzed as its control pin my_background/rgb_out_nxt_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[0] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[10] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[11] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[1] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[2] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[3] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[4] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[5] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[6] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[7] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[8] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch my_keyboard/RP_x_pos_nxt_reg[9] cannot be properly analyzed as its control pin my_keyboard/RP_x_pos_nxt_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[0] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[10] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[11] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[1] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[2] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[3] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[4] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[5] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[6] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[7] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[8] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch my_keyboard/rgb_out_nxt_reg[9] cannot be properly analyzed as its control pin my_keyboard/rgb_out_nxt_reg[9]/G is not reached by a timing clock
 Related violations: <none>
 
 
