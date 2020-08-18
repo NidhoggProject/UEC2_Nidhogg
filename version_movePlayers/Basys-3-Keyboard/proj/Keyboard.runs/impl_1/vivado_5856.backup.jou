@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Aug  5 16:05:10 2020
+# Process ID: 5856
+# Current directory: C:/__Programowanie__/Vivado/PrzemyslawKurzak/Projekt_keyboard/Basys-3-Keyboard/proj/Keyboard.runs/impl_1
+# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: C:/__Programowanie__/Vivado/PrzemyslawKurzak/Projekt_keyboard/Basys-3-Keyboard/proj/Keyboard.runs/impl_1/top.vdi
+# Journal file: C:/__Programowanie__/Vivado/PrzemyslawKurzak/Projekt_keyboard/Basys-3-Keyboard/proj/Keyboard.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
