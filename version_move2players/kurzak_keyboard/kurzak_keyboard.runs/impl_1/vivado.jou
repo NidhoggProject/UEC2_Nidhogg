@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Aug 18 00:03:33 2020
+# Process ID: 2080
+# Current directory: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/impl_1
+# Command line: vivado.exe -log nidhogg.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source nidhogg.tcl -notrace
+# Log file: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/impl_1/nidhogg.vdi
+# Journal file: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source nidhogg.tcl -notrace

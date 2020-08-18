@@ -1,0 +1,740 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Aug 18 00:02:41 2020
+# Process ID: 3116
+# Current directory: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/synth_1
+# Command line: vivado.exe -log nidhogg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nidhogg.tcl
+# Log file: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/synth_1/nidhogg.vds
+# Journal file: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source nidhogg.tcl -notrace
+Command: synth_design -top nidhogg -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5304 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 363.129 ; gain = 94.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nidhogg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:22]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:44]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:44]
+INFO: [Synth 8-638] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:30648]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ODDR' (1#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:30648]
+INFO: [Synth 8-638] synthesizing module 'clk' [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk.v:72]
+INFO: [Synth 8-638] synthesizing module 'clk_clk_wiz' [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_clk_wiz.v:70]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_clk_wiz.v:128]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_clk_wiz.v:128]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_clk_wiz.v:131]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_clk_wiz.v:131]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_clk_wiz.v:134]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_clk_wiz.v:134]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:19468]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (2#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:19468]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25757]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 6.500000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 6.500000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 13 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (3#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25757]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BUFGCE' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:617]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'BUFGCE' (5#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:617]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'clk_clk_wiz' (7#1) [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_clk_wiz.v:70]
+INFO: [Synth 8-256] done synthesizing module 'clk' (8#1) [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk.v:72]
+WARNING: [Synth 8-350] instance 'my_clk' of module 'clk' requires 6 connections, but only 5 given [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:59]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:69]
+INFO: [Synth 8-638] synthesizing module 'state_machine' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/state_machine.v:3]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter HELP bound to: 1 - type: integer 
+	Parameter SELECT_MAP bound to: 2 - type: integer 
+	Parameter GAME_FOREST bound to: 3 - type: integer 
+	Parameter GAME_CASTLE bound to: 4 - type: integer 
+	Parameter END_GAME_FOREST bound to: 5 - type: integer 
+	Parameter END_GAME_CASTLE bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'state_machine' (9#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/state_machine.v:3]
+INFO: [Synth 8-638] synthesizing module 'vga_timing' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/vga_timing.v:23]
+INFO: [Synth 8-256] done synthesizing module 'vga_timing' (10#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/vga_timing.v:23]
+INFO: [Synth 8-638] synthesizing module 'background' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/start.v:23]
+	Parameter HEIGHT bound to: 128 - type: integer 
+	Parameter WIDTH bound to: 128 - type: integer 
+	Parameter xpos bound to: 0 - type: integer 
+	Parameter ypos bound to: 0 - type: integer 
+WARNING: [Synth 8-5788] Register pixel_addr_reg in module background is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/start.v:76]
+INFO: [Synth 8-256] done synthesizing module 'background' (11#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/start.v:23]
+WARNING: [Synth 8-689] width (14) of port connection 'pixel_addr' does not match port width (12) of module 'background' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:127]
+INFO: [Synth 8-638] synthesizing module 'image_rom' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom.v:23]
+INFO: [Synth 8-3876] $readmem data file '../../background_64_64.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom.v:32]
+INFO: [Synth 8-256] done synthesizing module 'image_rom' (12#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom.v:23]
+WARNING: [Synth 8-689] width (14) of port connection 'address' does not match port width (12) of module 'image_rom' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:137]
+INFO: [Synth 8-638] synthesizing module 'players' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:23]
+	Parameter HEIGHT bound to: 64 - type: integer 
+	Parameter WIDTH bound to: 64 - type: integer 
+WARNING: [Synth 8-5788] Register pixel_addr_playerL_head_reg in module players is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:123]
+WARNING: [Synth 8-5788] Register pixel_addr_playerL_legs_reg in module players is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:124]
+WARNING: [Synth 8-5788] Register pixel_addr_playerR_head_reg in module players is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:125]
+WARNING: [Synth 8-5788] Register pixel_addr_playerR_legs_reg in module players is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:126]
+WARNING: [Synth 8-3848] Net left_counter in module/entity players does not have driver. [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:64]
+WARNING: [Synth 8-3848] Net right_counter in module/entity players does not have driver. [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:64]
+INFO: [Synth 8-256] done synthesizing module 'players' (13#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:23]
+	Parameter picture bound to: ../../playerL_gora1.data - type: string 
+INFO: [Synth 8-3876] $readmem data file '../../playerL_gora1.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:34]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player' (14#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized0' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:23]
+	Parameter picture bound to: ../../playerL_dol1.data - type: string 
+INFO: [Synth 8-3876] $readmem data file '../../playerL_dol1.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:34]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized0' (14#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized1' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:23]
+	Parameter picture bound to: ../../playerR_gora1_rev.data - type: string 
+INFO: [Synth 8-3876] $readmem data file '../../playerR_gora1_rev.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:34]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized1' (14#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized2' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:23]
+	Parameter picture bound to: ../../playerR_dol1_rev.data - type: string 
+INFO: [Synth 8-3876] $readmem data file '../../playerR_dol1_rev.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:34]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized2' (14#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:23]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/keyboard.v:23]
+	Parameter LP_GO_LEFT bound to: 8'b00011100 
+	Parameter LP_GO_RIGHT bound to: 8'b00100011 
+	Parameter LP_SWORD_UP bound to: 8'b00011101 
+	Parameter LP_SWORD_DOWN bound to: 8'b00011011 
+	Parameter LP_THROW_OR_PICK_UP_SWORD bound to: 8'b00010010 
+	Parameter LP_JUMP bound to: 8'b00101001 
+	Parameter RP_GO_LEFT bound to: 8'b01101011 
+	Parameter RP_GO_RIGHT bound to: 8'b01110100 
+	Parameter RP_SWORD_UP bound to: 8'b01110101 
+	Parameter RP_SWORD_DOWN bound to: 8'b01110010 
+	Parameter RP_THROW_OR_PICK_UP_SWORD bound to: 8'b01011001 
+	Parameter RP_JUMP bound to: 8'b01011010 
+INFO: [Synth 8-638] synthesizing module 'PS2Receiver' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/PS2Receiver.v:23]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/debouncer.v:23]
+	Parameter COUNT_MAX bound to: 19 - type: integer 
+	Parameter COUNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (15#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/PS2Receiver.v:55]
+INFO: [Synth 8-256] done synthesizing module 'PS2Receiver' (16#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/PS2Receiver.v:23]
+WARNING: [Synth 8-5788] Register LP_x_pos_nxt_reg in module keyboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/keyboard.v:88]
+WARNING: [Synth 8-5788] Register RP_x_pos_nxt_reg in module keyboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/keyboard.v:89]
+WARNING: [Synth 8-5788] Register counter_reg in module keyboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/keyboard.v:90]
+WARNING: [Synth 8-3848] Net key in module/entity keyboard does not have driver. [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/keyboard.v:29]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (17#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/keyboard.v:23]
+WARNING: [Synth 8-3848] Net help in module/entity nidhogg does not have driver. [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:67]
+WARNING: [Synth 8-3848] Net menu in module/entity nidhogg does not have driver. [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:67]
+WARNING: [Synth 8-3848] Net select_map in module/entity nidhogg does not have driver. [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:67]
+WARNING: [Synth 8-3848] Net game_castle in module/entity nidhogg does not have driver. [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:67]
+WARNING: [Synth 8-3848] Net game_forest in module/entity nidhogg does not have driver. [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:67]
+WARNING: [Synth 8-3848] Net win in module/entity nidhogg does not have driver. [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:67]
+INFO: [Synth 8-256] done synthesizing module 'nidhogg' (18#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/nidhogg.v:22]
+WARNING: [Synth 8-3331] design keyboard has unconnected port key[1]
+WARNING: [Synth 8-3331] design keyboard has unconnected port key[0]
+WARNING: [Synth 8-3331] design players has unconnected port left
+WARNING: [Synth 8-3331] design players has unconnected port right
+WARNING: [Synth 8-3331] design state_machine has unconnected port clk
+WARNING: [Synth 8-3331] design state_machine has unconnected port reset
+WARNING: [Synth 8-3331] design state_machine has unconnected port help
+WARNING: [Synth 8-3331] design state_machine has unconnected port menu
+WARNING: [Synth 8-3331] design state_machine has unconnected port select_map
+WARNING: [Synth 8-3331] design state_machine has unconnected port game_castle
+WARNING: [Synth 8-3331] design state_machine has unconnected port game_forest
+WARNING: [Synth 8-3331] design state_machine has unconnected port win
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 432.266 ; gain = 164.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 432.266 ; gain = 164.082
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_board.xdc] for cell 'my_clk/inst'
+Finished Parsing XDC File [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_board.xdc] for cell 'my_clk/inst'
+Parsing XDC File [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk.xdc] for cell 'my_clk/inst'
+Finished Parsing XDC File [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk.xdc] for cell 'my_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nidhogg_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nidhogg_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/constrs_1/new/basys.xdc]
+Finished Parsing XDC File [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/constrs_1/new/basys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/constrs_1/new/basys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nidhogg_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nidhogg_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nidhogg_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nidhogg_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_late.xdc] for cell 'my_clk/inst'
+Finished Parsing XDC File [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/ip/clk/clk_late.xdc] for cell 'my_clk/inst'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  BUFGCE => BUFGCTRL: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 747.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 747.266 ; gain = 479.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 747.266 ; gain = 479.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for my_clk/inst. (constraint file  C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property DONT_TOUCH = true for my_clk. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 747.266 ; gain = 479.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vcount" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom.v:35]
+INFO: [Synth 8-4471] merging register 'pixel_addr_playerL_legs_reg[11:0]' into 'pixel_addr_playerL_head_reg[11:0]' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:124]
+INFO: [Synth 8-4471] merging register 'pixel_addr_playerR_legs_reg[11:0]' into 'pixel_addr_playerR_head_reg[11:0]' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:126]
+WARNING: [Synth 8-6014] Unused sequential element pixel_addr_playerL_legs_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:124]
+WARNING: [Synth 8-6014] Unused sequential element pixel_addr_playerR_legs_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:126]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:43]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:43]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:43]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:43]
+INFO: [Synth 8-5546] ROM "O" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/debouncer.v:33]
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/PS2Receiver.v:55]
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (64) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "LP_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RP_left" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_out_nxt_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/start.v:92]
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_out_nxt_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/players.v:139]
+WARNING: [Synth 8-327] inferring latch for variable 'RP_right_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/keyboard.v:141]
+WARNING: [Synth 8-327] inferring latch for variable 'LP_left_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/keyboard.v:130]
+WARNING: [Synth 8-327] inferring latch for variable 'LP_right_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/keyboard.v:131]
+WARNING: [Synth 8-327] inferring latch for variable 'RP_left_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/keyboard.v:140]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 747.266 ; gain = 479.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 6     
+	   4 Input     12 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 21    
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---ROMs : 
+	                              ROMs := 5     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 8     
+	 405 Input     12 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 23    
+	 405 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_clk_wiz 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+Module vga_timing 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module background 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	 405 Input     12 Bit        Muxes := 1     
+	 405 Input      1 Bit        Muxes := 1     
+Module image_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module players 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 4     
+	   4 Input     12 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 5     
+	                1 Bit    Registers := 4     
+Module image_rom_player 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_player__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_player__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_player__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module PS2Receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+Module keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 4     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               12 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 18    
+	   5 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vcount" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element my_PS2Receiver/oflag_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/PS2Receiver.v:77]
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (64) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "RP_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LP_left" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element my_PS2Receiver/cnt_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/PS2Receiver.v:55]
+WARNING: [Synth 8-6014] Unused sequential element my_PS2Receiver/db_clk/count_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/debouncer.v:33]
+WARNING: [Synth 8-6014] Unused sequential element my_PS2Receiver/db_data/count_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/debouncer.v:33]
+WARNING: [Synth 8-6014] Unused sequential element my_image_rom/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom.v:35]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerL_head/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:43]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerL_legs/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:43]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerR_head/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:43]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerR_legs/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.srcs/sources_1/imports/new/image_rom_player.v:43]
+WARNING: [Synth 8-3331] design keyboard has unconnected port key[1]
+WARNING: [Synth 8-3331] design keyboard has unconnected port key[0]
+WARNING: [Synth 8-3331] design players has unconnected port left
+WARNING: [Synth 8-3331] design players has unconnected port right
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[6]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[7]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[7]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[5]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[5]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[4]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[4]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[3]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[2]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[1]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[0]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'my_players/pixel_addr_playerR_head_reg[6]' (FDE) to 'my_players/pixel_addr_playerL_head_reg[6]'
+INFO: [Synth 8-3886] merging instance 'my_players/pixel_addr_playerR_head_reg[7]' (FDE) to 'my_players/pixel_addr_playerL_head_reg[7]'
+INFO: [Synth 8-3886] merging instance 'my_players/pixel_addr_playerR_head_reg[8]' (FDE) to 'my_players/pixel_addr_playerL_head_reg[8]'
+INFO: [Synth 8-3886] merging instance 'my_players/pixel_addr_playerR_head_reg[9]' (FDE) to 'my_players/pixel_addr_playerL_head_reg[9]'
+INFO: [Synth 8-3886] merging instance 'my_players/pixel_addr_playerR_head_reg[10]' (FDE) to 'my_players/pixel_addr_playerL_head_reg[10]'
+INFO: [Synth 8-3886] merging instance 'my_players/pixel_addr_playerR_head_reg[11]' (FDE) to 'my_players/pixel_addr_playerL_head_reg[11]'
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[11]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[10]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[9]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[8]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[7]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[6]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[5]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[4]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[3]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[2]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[1]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/rgb_out_nxt_reg[0]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[11]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[10]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[9]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[8]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[7]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[6]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[5]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[4]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[3]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[2]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[1]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vcount_out_reg[0]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/vblnk_out_reg) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[11]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[10]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[9]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[8]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[7]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[6]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[5]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[4]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[3]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[2]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[1]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hcount_out_reg[0]) is unused and will be removed from module nidhogg.
+WARNING: [Synth 8-3332] Sequential element (my_players/hblnk_out_reg) is unused and will be removed from module nidhogg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 747.266 ; gain = 479.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|image_rom        | rgb_reg    | 4096x12       | Block RAM      | 
+|image_rom_player | rgb_reg    | 4096x12       | Block RAM      | 
+|image_rom_player | rgb_reg    | 4096x12       | Block RAM      | 
+|image_rom_player | rgb_reg    | 4096x12       | Block RAM      | 
+|image_rom_player | rgb_reg    | 4096x12       | Block RAM      | 
++-----------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 747.266 ; gain = 479.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 753.887 ; gain = 485.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance my_image_rom/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_rom/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_head/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_head/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_legs/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_legs/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_head/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_head/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_legs/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_legs/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 753.887 ; gain = 485.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.887 ; gain = 485.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.887 ; gain = 485.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.887 ; gain = 485.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.887 ; gain = 485.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.887 ; gain = 485.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.887 ; gain = 485.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |BUFGCE     |     3|
+|3     |BUFH       |     3|
+|4     |CARRY4     |    66|
+|5     |LUT1       |    53|
+|6     |LUT2       |    69|
+|7     |LUT3       |    25|
+|8     |LUT4       |    76|
+|9     |LUT5       |    41|
+|10    |LUT6       |    95|
+|11    |MMCME2_ADV |     1|
+|12    |ODDR       |     1|
+|13    |RAMB18E1   |     1|
+|14    |RAMB18E1_1 |     1|
+|15    |RAMB18E1_2 |     1|
+|16    |RAMB18E1_3 |     1|
+|17    |RAMB18E1_4 |     1|
+|18    |RAMB36E1   |     1|
+|19    |RAMB36E1_1 |     1|
+|20    |RAMB36E1_2 |     1|
+|21    |RAMB36E1_3 |     1|
+|22    |RAMB36E1_4 |     1|
+|23    |FDCE       |   142|
+|24    |FDRE       |   162|
+|25    |LD         |    12|
+|26    |LDC        |     4|
+|27    |IBUF       |     4|
+|28    |OBUF       |    14|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------------+---------------------------------+------+
+|      |Instance                |Module                           |Cells |
++------+------------------------+---------------------------------+------+
+|1     |top                     |                                 |   782|
+|2     |  my_clk                |clk                              |    33|
+|3     |    inst                |clk_clk_wiz                      |    33|
+|4     |  my_background         |background                       |   120|
+|5     |  my_image_playerL_head |image_rom_player                 |     6|
+|6     |  my_image_playerL_legs |image_rom_player__parameterized0 |     6|
+|7     |  my_image_playerR_head |image_rom_player__parameterized1 |     6|
+|8     |  my_image_playerR_legs |image_rom_player__parameterized2 |    18|
+|9     |  my_image_rom          |image_rom                        |     2|
+|10    |  my_keyboard           |keyboard                         |   403|
+|11    |    my_PS2Receiver      |PS2Receiver                      |    90|
+|12    |      db_clk            |debouncer                        |    15|
+|13    |      db_data           |debouncer_0                      |    24|
+|14    |  my_players            |players                          |    57|
+|15    |  my_timing             |vga_timing                       |   113|
++------+------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.887 ; gain = 485.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 753.887 ; gain = 170.703
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.887 ; gain = 485.703
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 101 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  BUFGCE => BUFGCTRL: 3 instances
+  LD => LDCE: 12 instances
+  LDC => LDCE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+112 Infos, 99 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 753.887 ; gain = 493.793
+INFO: [Common 17-1381] The checkpoint 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/kurzak_keyboard/kurzak_keyboard.runs/synth_1/nidhogg.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file nidhogg_utilization_synth.rpt -pb nidhogg_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 753.887 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 18 00:03:26 2020...
