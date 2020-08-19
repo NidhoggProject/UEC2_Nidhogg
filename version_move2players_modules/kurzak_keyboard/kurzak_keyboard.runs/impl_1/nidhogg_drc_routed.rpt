@@ -1,0 +1,51 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed Aug 19 18:54:44 2020
+| Host         : LAPTOP-269KMLDC running 64-bit major release  (build 9200)
+| Command      : report_drc -file nidhogg_drc_routed.rpt -pb nidhogg_drc_routed.pb -rpx nidhogg_drc_routed.rpx
+| Design       : nidhogg
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 3          |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net my_keyboard/my_PS2Receiver/LP_left_reg is a gated clock net sourced by a combinational pin my_keyboard/my_PS2Receiver/LP_left_nxt_reg_i_2/O, cell my_keyboard/my_PS2Receiver/LP_left_nxt_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net my_keyboard/my_PS2Receiver/RP_left_reg_0 is a gated clock net sourced by a combinational pin my_keyboard/my_PS2Receiver/RP_left_nxt_reg_i_2/O, cell my_keyboard/my_PS2Receiver/RP_left_nxt_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net my_timing/E[0] is a gated clock net sourced by a combinational pin my_timing/rgb_out_nxt_reg[11]_i_2/O, cell my_timing/rgb_out_nxt_reg[11]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

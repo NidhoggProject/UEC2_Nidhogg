@@ -1,0 +1,42 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed Aug 19 18:54:04 2020
+| Host         : LAPTOP-269KMLDC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -file nidhogg_control_sets_placed.rpt
+| Design       : nidhogg
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+
+1. Summary
+----------
+
++-------------------------------+-------+
+|             Status            | Count |
++-------------------------------+-------+
+| Number of unique control sets |    22 |
++-------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              27 |           11 |
+| No           | No                    | Yes                    |             114 |           47 |
+| No           | Yes                   | No                     |               4 |            3 |
+| Yes          | No                    | No                     |              74 |           29 |
+| Yes          | No                    | Yes                    |              12 |            3 |
+| Yes          | Yes                   | No                     |             137 |           36 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
