@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_0709.srcs/sources_1/ip/clk" \
+"../../../../project_0709.srcs/sources_1/ip/clk/clk_clk_wiz.v" \
+"../../../../project_0709.srcs/sources_1/ip/clk/clk.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/PS2Receiver.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/board_control.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/death_control.v" \
+"../../../../project_0709.srcs/sources_1/imports/new/debouncer.v" \
+"../../../../project_0709.srcs/sources_1/imports/new/image_rom.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_legs.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerL.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerR.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/start.v" \
+"../../../../project_0709.srcs/sources_1/imports/new/vga_timing.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/win.v" \
+"../../../../project_0709.srcs/sources_1/imports/kurzak_projekt_0709/vga_game.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
