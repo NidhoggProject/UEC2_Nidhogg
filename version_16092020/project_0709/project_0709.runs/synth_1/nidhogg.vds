@@ -1,0 +1,1199 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Sep 17 02:42:34 2020
+# Process ID: 6908
+# Current directory: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.runs/synth_1
+# Command line: vivado.exe -log nidhogg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nidhogg.tcl
+# Log file: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.runs/synth_1/nidhogg.vds
+# Journal file: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source nidhogg.tcl -notrace
+Command: synth_design -top nidhogg -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10828 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 362.758 ; gain = 94.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nidhogg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/vga_game.v:22]
+INFO: [Synth 8-638] synthesizing module 'clk' [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/ip/clk/clk.v:72]
+INFO: [Synth 8-638] synthesizing module 'clk_clk_wiz' [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/ip/clk/clk_clk_wiz.v:70]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:19468]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:19468]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25757]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 6.500000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 6.500000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 13 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25757]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'clk_clk_wiz' (4#1) [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/ip/clk/clk_clk_wiz.v:70]
+INFO: [Synth 8-256] done synthesizing module 'clk' (5#1) [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/ip/clk/clk.v:72]
+WARNING: [Synth 8-350] instance 'my_clk' of module 'clk' requires 6 connections, but only 5 given [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/vga_game.v:55]
+INFO: [Synth 8-638] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:30648]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ODDR' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:30648]
+INFO: [Synth 8-638] synthesizing module 'vga_timing' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/vga_timing.v:23]
+INFO: [Synth 8-256] done synthesizing module 'vga_timing' (7#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/vga_timing.v:23]
+INFO: [Synth 8-638] synthesizing module 'background' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/start.v:23]
+	Parameter HEIGHT bound to: 128 - type: integer 
+	Parameter WIDTH bound to: 128 - type: integer 
+	Parameter xpos bound to: 0 - type: integer 
+	Parameter ypos bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'background' (8#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/start.v:23]
+WARNING: [Synth 8-689] width (14) of port connection 'pixel_addr' does not match port width (12) of module 'background' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/vga_game.v:125]
+INFO: [Synth 8-638] synthesizing module 'image_rom' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/image_rom.v:23]
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/background_64_64.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/image_rom.v:32]
+INFO: [Synth 8-256] done synthesizing module 'image_rom' (9#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/image_rom.v:23]
+WARNING: [Synth 8-689] width (14) of port connection 'address' does not match port width (12) of module 'image_rom' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/vga_game.v:135]
+INFO: [Synth 8-638] synthesizing module 'board_control' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/board_control.v:23]
+	Parameter HEIGHT bound to: 64 - type: integer 
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter xpos_up bound to: 732 - type: integer 
+	Parameter ypos_up bound to: 160 - type: integer 
+	Parameter xpos_down bound to: 732 - type: integer 
+	Parameter ypos_down bound to: 224 - type: integer 
+	Parameter xpos_up2 bound to: 228 - type: integer 
+	Parameter ypos_up2 bound to: 160 - type: integer 
+	Parameter xpos_down2 bound to: 228 - type: integer 
+	Parameter ypos_down2 bound to: 224 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'board_control' (10#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/board_control.v:23]
+WARNING: [Synth 8-350] instance 'my_board_control' of module 'board_control' requires 25 connections, but only 24 given [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/vga_game.v:168]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/pochodnia_gora.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/pochodnia_gora.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:35]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player' (11#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized0' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/pochodnia_dol.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/pochodnia_dol.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:35]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized0' (11#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+INFO: [Synth 8-638] synthesizing module 'playerL' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerL.v:4]
+	Parameter HEIGHT bound to: 64 - type: integer 
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter SWORD_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'playerL' (12#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerL.v:4]
+WARNING: [Synth 8-689] width (12) of port connection 'pixel_addr_sword_L' does not match port width (10) of module 'playerL' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/vga_game.v:251]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized1' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerL_gora1.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerL_gora1.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:35]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized1' (12#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized2' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerL_gora2.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerL_gora2.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:35]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized2' (12#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized3' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerL_dol1.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerL_dol1.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:35]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized3' (12#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized4' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerL_dol2.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerL_dol2.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:35]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized4' (12#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_32x32' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/miecz_L.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/miecz_L.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:34]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_32x32' (13#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:23]
+WARNING: [Synth 8-689] width (12) of port connection 'address' does not match port width (10) of module 'image_rom_32x32' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/vga_game.v:287]
+INFO: [Synth 8-638] synthesizing module 'playerR' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerR.v:23]
+	Parameter HEIGHT bound to: 64 - type: integer 
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter SWORD_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'playerR' (14#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerR.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized5' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerR_gora1_rev.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerR_gora1_rev.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:35]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized5' (14#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized6' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerR_gora2_rev.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerR_gora2_rev.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:35]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized6' (14#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized7' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerR_dol1_rev.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerR_dol1_rev.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:35]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized7' (14#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_player__parameterized8' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerR_dol2_rev.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/playerR_dol2_rev.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:35]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_player__parameterized8' (14#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_32x32__parameterized0' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/miecz_R.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/miecz_R.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:34]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_32x32__parameterized0' (14#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:23]
+INFO: [Synth 8-638] synthesizing module 'death_control' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/death_control.v:23]
+INFO: [Synth 8-256] done synthesizing module 'death_control' (15#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/death_control.v:23]
+INFO: [Synth 8-638] synthesizing module 'win' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/win.v:23]
+	Parameter SIZE bound to: 128 - type: integer 
+	Parameter SIZE_CROWN bound to: 32 - type: integer 
+	Parameter ypos_R bound to: 600 - type: integer 
+	Parameter xpos_L bound to: 75 - type: integer 
+	Parameter ypos_L bound to: 600 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'win' (16#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/win.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_128x128' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_legs.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/wygranalewo.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/wygranalewo.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_legs.v:34]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_128x128' (17#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_legs.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_128x128__parameterized0' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_legs.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/wygranaprawo.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/wygranaprawo.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_legs.v:34]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_128x128__parameterized0' (17#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_legs.v:23]
+INFO: [Synth 8-638] synthesizing module 'image_rom_32x32__parameterized1' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:23]
+	Parameter picture bound to: C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/korona.data - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/korona.data' is read successfully [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:34]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_32x32__parameterized1' (17#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:23]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:23]
+	Parameter RP_GO_LEFT bound to: 8'b01101011 
+	Parameter RP_GO_RIGHT bound to: 8'b01110100 
+	Parameter RP_SWORD_UP bound to: 8'b01110101 
+	Parameter RP_SWORD_DOWN bound to: 8'b01110010 
+	Parameter RP_JUMP bound to: 8'b00101001 
+	Parameter RP_THROW_SWORD bound to: 8'b01011010 
+INFO: [Synth 8-638] synthesizing module 'PS2Receiver' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/PS2Receiver.v:23]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/debouncer.v:23]
+	Parameter COUNT_MAX bound to: 19 - type: integer 
+	Parameter COUNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (18#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/PS2Receiver.v:55]
+INFO: [Synth 8-256] done synthesizing module 'PS2Receiver' (19#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/PS2Receiver.v:23]
+WARNING: [Synth 8-3848] Net key in module/entity keyboard does not have driver. [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:35]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (20#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:23]
+INFO: [Synth 8-256] done synthesizing module 'nidhogg' (21#1) [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/vga_game.v:22]
+WARNING: [Synth 8-3331] design keyboard has unconnected port key[1]
+WARNING: [Synth 8-3331] design keyboard has unconnected port key[0]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[11]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[10]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[9]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[8]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[7]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[6]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[5]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[4]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[3]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[2]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[1]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[0]
+WARNING: [Synth 8-3331] design board_control has unconnected port board_change[1]
+WARNING: [Synth 8-3331] design board_control has unconnected port board_change[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 482.992 ; gain = 214.348
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 482.992 ; gain = 214.348
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/ip/clk/clk_board.xdc] for cell 'my_clk/inst'
+Finished Parsing XDC File [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/ip/clk/clk_board.xdc] for cell 'my_clk/inst'
+Parsing XDC File [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/ip/clk/clk.xdc] for cell 'my_clk/inst'
+Finished Parsing XDC File [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/ip/clk/clk.xdc] for cell 'my_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/ip/clk/clk.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nidhogg_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nidhogg_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/constrs_1/imports/new/basys.xdc]
+Finished Parsing XDC File [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/constrs_1/imports/new/basys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/constrs_1/imports/new/basys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nidhogg_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nidhogg_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nidhogg_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nidhogg_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 787.984 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 787.984 ; gain = 519.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 787.984 ; gain = 519.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for my_clk/inst. (constraint file  C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property DONT_TOUCH = true for my_clk. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 787.984 ; gain = 519.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vcount" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/image_rom.v:35]
+INFO: [Synth 8-4471] merging register 'pixel_addr_down_reg[11:0]' into 'pixel_addr_up_reg[11:0]' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/board_control.v:114]
+WARNING: [Synth 8-6014] Unused sequential element pixel_addr_down_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/board_control.v:114]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/board_control.v:152]
+INFO: [Synth 8-5544] ROM "winR" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "winL" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:37]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:37]
+INFO: [Synth 8-4471] merging register 'pixel_addr_sign_right_reg[13:0]' into 'pixel_addr_sign_left_reg[13:0]' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/win.v:126]
+WARNING: [Synth 8-6014] Unused sequential element pixel_addr_sign_right_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/win.v:126]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_legs.v:37]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_legs.v:37]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:37]
+INFO: [Synth 8-5546] ROM "O" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/debouncer.v:33]
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/PS2Receiver.v:55]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:106]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:303]
+INFO: [Synth 8-5546] ROM "RP_y_pos_nxt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LP_y_pos_nxt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LP_change_legs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RP_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RP_jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RP_sword_up" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RP_sword_down" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RP_throw" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_out_nxt_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/start.v:92]
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_out_nxt_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/board_control.v:129]
+WARNING: [Synth 8-327] inferring latch for variable 'winL_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/board_control.v:197]
+WARNING: [Synth 8-327] inferring latch for variable 'winR_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/board_control.v:137]
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_out_nxt_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerL.v:139]
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_out_nxt_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerR.v:179]
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_out_nxt_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/win.v:143]
+WARNING: [Synth 8-327] inferring latch for variable 'sword_pos_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:505]
+WARNING: [Synth 8-327] inferring latch for variable 'RP_throw_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:534]
+WARNING: [Synth 8-327] inferring latch for variable 'RP_right_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:504]
+WARNING: [Synth 8-327] inferring latch for variable 'RP_left_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:503]
+WARNING: [Synth 8-327] inferring latch for variable 'RP_jump_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:516]
+WARNING: [Synth 8-327] inferring latch for variable 'RP_sword_down_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:528]
+WARNING: [Synth 8-327] inferring latch for variable 'RP_sword_up_reg' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/keyboard.v:522]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 787.984 ; gain = 519.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   2 Input     21 Bit       Adders := 2     
+	   3 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 18    
+	   2 Input     12 Bit       Adders := 17    
+	   3 Input     12 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 6     
+	   3 Input      5 Bit       Adders := 5     
+	   2 Input      5 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      1 Bit       Adders := 4     
++---Registers : 
+	               21 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 57    
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 38    
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---ROMs : 
+	                              ROMs := 16    
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 57    
+	 405 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 116   
+	 405 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_timing 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module background 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	 405 Input     12 Bit        Muxes := 1     
+	 405 Input      1 Bit        Muxes := 1     
+Module image_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module board_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 17    
+	   4 Input     12 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+Module image_rom_player 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_player__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module playerL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 7     
+	   2 Input     12 Bit       Adders := 3     
+	   3 Input     12 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 9     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 5     
+Module image_rom_player__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_player__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_player__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_player__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_32x32 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module playerR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 7     
+	   2 Input     12 Bit       Adders := 3     
+	   3 Input     12 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 9     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 5     
+Module image_rom_player__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_player__parameterized6 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_player__parameterized7 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_player__parameterized8 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_32x32__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module death_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 11    
+Module win 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+Module image_rom_128x128 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_128x128__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module image_rom_32x32__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module PS2Receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+Module keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 8     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	               21 Bit    Registers := 2     
+	               12 Bit    Registers := 10    
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 14    
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 81    
+	   7 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vcount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/board_control.v:175]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/board_control.v:152]
+DSP Report: Generating DSP rgb_out_nxt3, operation Mode is: A*B.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: Generating DSP rgb_out_nxt3, operation Mode is: A*B.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: Generating DSP rgb_out_nxt3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: Generating DSP rgb_out_nxt3, operation Mode is: A*B.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: Generating DSP rgb_out_nxt3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: Generating DSP rgb_out_nxt3, operation Mode is: A*B.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: Generating DSP rgb_out_nxt3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: Generating DSP rgb_out_nxt3, operation Mode is: A*B.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: Generating DSP rgb_out_nxt3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: Generating DSP rgb_out_nxt3, operation Mode is: A*B.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: Generating DSP rgb_out_nxt3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+DSP Report: operator rgb_out_nxt3 is absorbed into DSP rgb_out_nxt3.
+INFO: [Synth 8-4471] merging register 'pixel_addr_playerL_legs_reg[11:0]' into 'pixel_addr_playerL_head_reg[11:0]' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerL.v:112]
+WARNING: [Synth 8-6014] Unused sequential element pixel_addr_playerL_legs_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerL.v:112]
+INFO: [Synth 8-4471] merging register 'pixel_addr_playerR_legs_reg[11:0]' into 'pixel_addr_playerR_head_reg[11:0]' [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerR.v:137]
+WARNING: [Synth 8-6014] Unused sequential element pixel_addr_playerR_legs_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/playerR.v:137]
+WARNING: [Synth 8-6014] Unused sequential element my_PS2Receiver/oflag_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/PS2Receiver.v:77]
+INFO: [Synth 8-5546] ROM "RP_y_pos_nxt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LP_y_pos_nxt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LP_change_legs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RP_throw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RP_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RP_jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RP_sword_down" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RP_sword_up" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element my_PS2Receiver/cnt_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/PS2Receiver.v:55]
+WARNING: [Synth 8-6014] Unused sequential element my_PS2Receiver/db_clk/count_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/debouncer.v:33]
+WARNING: [Synth 8-6014] Unused sequential element my_PS2Receiver/db_data/count_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/debouncer.v:33]
+WARNING: [Synth 8-6014] Unused sequential element my_image_rom/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/new/image_rom.v:35]
+WARNING: [Synth 8-6014] Unused sequential element my_image_torch_up/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element my_image_torch_down/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerL_head/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerL_head2/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerL_legs/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerL_legs2/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element my_sword_L/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:37]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerR_head/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerR_head2/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerR_legs/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element my_image_playerR_legs2/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_head.v:45]
+WARNING: [Synth 8-6014] Unused sequential element my_sword_R/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:37]
+WARNING: [Synth 8-6014] Unused sequential element my_image_sign_left/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_legs.v:37]
+WARNING: [Synth 8-6014] Unused sequential element my_image_sign_right/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_playerL_legs.v:37]
+WARNING: [Synth 8-6014] Unused sequential element my_image_crown/rgb_reg was removed.  [C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.srcs/sources_1/imports/kurzak_projekt_0709/image_rom_32x32.v:37]
+WARNING: [Synth 8-3331] design keyboard has unconnected port key[1]
+WARNING: [Synth 8-3331] design keyboard has unconnected port key[0]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[11]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[10]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[9]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[8]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[7]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[6]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[5]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[4]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[3]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[2]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[1]
+WARNING: [Synth 8-3331] design board_control has unconnected port xpos_playerR[0]
+WARNING: [Synth 8-3331] design board_control has unconnected port board_change[1]
+WARNING: [Synth 8-3331] design board_control has unconnected port board_change[0]
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[6]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[7]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[7]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[5]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[5]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[4]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[4]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[3]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[2]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[1]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'my_keyboard/my_PS2Receiver/dataprev_reg[0]' (FDE) to 'my_keyboard/my_PS2Receiver/keycode_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (winL_reg) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (winR_reg) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (xpos_playerL_out_reg[2]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (xpos_playerL_out_reg[1]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (xpos_playerL_out_reg[0]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[11]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[10]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[9]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[8]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[7]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[6]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[5]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[4]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[3]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[2]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[1]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerL_out_reg[0]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[11]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[10]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[9]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[8]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[7]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[6]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[5]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[4]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[3]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[2]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[1]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (ypos_playerR_out_reg[0]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (dead_L_reg) is unused and will be removed from module death_control.
+WARNING: [Synth 8-3332] Sequential element (dead_R_reg) is unused and will be removed from module death_control.
+WARNING: [Synth 8-3332] Sequential element (collision_reg) is unused and will be removed from module death_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[11]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[10]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[9]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[8]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[7]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[6]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[5]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[4]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[3]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[2]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[1]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[0]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[11]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[10]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[9]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[8]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[7]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[6]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[5]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[4]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[3]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[2]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[1]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vcount_out_reg[0]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (vblnk_out_reg) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[11]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[10]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[9]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[8]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[7]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[6]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[5]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[4]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[3]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[2]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[1]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hcount_out_reg[0]) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (hblnk_out_reg) is unused and will be removed from module win.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[11]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[10]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[9]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[8]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[7]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[6]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[5]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[4]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[3]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[2]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[1]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[0]) is unused and will be removed from module board_control.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[11]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[10]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[9]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[8]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[7]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[6]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[5]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[4]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[3]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[2]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[1]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[0]) is unused and will be removed from module playerL.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[11]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[10]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[9]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[8]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[7]) is unused and will be removed from module playerR.
+WARNING: [Synth 8-3332] Sequential element (rgb_out_nxt_reg[6]) is unused and will be removed from module playerR.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 787.984 ; gain = 519.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+--------------------------------+---------------+----------------+
+|Module Name       | RTL Object                     | Depth x Width | Implemented As | 
++------------------+--------------------------------+---------------+----------------+
+|image_rom         | rgb_reg                        | 4096x12       | Block RAM      | 
+|image_rom_player  | rgb_reg                        | 4096x12       | Block RAM      | 
+|image_rom_player  | rgb_reg                        | 4096x12       | Block RAM      | 
+|image_rom_player  | rgb_reg                        | 4096x12       | Block RAM      | 
+|image_rom_player  | rgb_reg                        | 4096x12       | Block RAM      | 
+|image_rom_player  | rgb_reg                        | 4096x12       | Block RAM      | 
+|image_rom_player  | rgb_reg                        | 4096x12       | Block RAM      | 
+|image_rom_32x32   | rgb_reg                        | 1024x12       | Block RAM      | 
+|image_rom_player  | rgb_reg                        | 4096x12       | Block RAM      | 
+|image_rom_player  | rgb_reg                        | 4096x12       | Block RAM      | 
+|image_rom_player  | rgb_reg                        | 4096x12       | Block RAM      | 
+|image_rom_player  | rgb_reg                        | 4096x12       | Block RAM      | 
+|image_rom_32x32   | rgb_reg                        | 1024x12       | Block RAM      | 
+|image_rom_128x128 | rgb_reg                        | 16384x12      | Block RAM      | 
+|image_rom_128x128 | rgb_reg                        | 16384x12      | Block RAM      | 
+|image_rom_32x32   | rgb_reg                        | 1024x12       | Block RAM      | 
+|nidhogg           | my_image_playerR_head/rgb_reg  | 4096x12       | Block RAM      | 
+|nidhogg           | my_image_playerR_head2/rgb_reg | 4096x12       | Block RAM      | 
+|nidhogg           | my_image_playerR_legs/rgb_reg  | 4096x12       | Block RAM      | 
+|nidhogg           | my_image_playerR_legs2/rgb_reg | 4096x12       | Block RAM      | 
+|nidhogg           | my_sword_R/rgb_reg             | 1024x12       | Block RAM      | 
+|nidhogg           | my_image_sign_left/rgb_reg     | 16384x12      | Block RAM      | 
+|nidhogg           | my_image_sign_right/rgb_reg    | 16384x12      | Block RAM      | 
+|nidhogg           | my_image_crown/rgb_reg         | 1024x12       | Block RAM      | 
++------------------+--------------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|board_control | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|board_control | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|board_control | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|board_control | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|board_control | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|board_control | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|board_control | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|board_control | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|board_control | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|board_control | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|board_control | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 891.941 ; gain = 623.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 928.133 ; gain = 659.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance my_image_rom/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_rom/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_torch_up/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_torch_up/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_torch_down/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_torch_down/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_head/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_head/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_head2/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_head2/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_legs/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_legs/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_legs2/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerL_legs2/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_sword_L/rgb_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_head/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_head/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_head2/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_head2/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_legs/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_legs/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_legs2/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_playerR_legs2/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_sword_R/rgb_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_left/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_left/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_left/rgb_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_left/rgb_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_left/rgb_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_left/rgb_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_right/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_right/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_right/rgb_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_right/rgb_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_right/rgb_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_sign_right/rgb_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance my_image_crown/rgb_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 928.133 ; gain = 659.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 928.133 ; gain = 659.488
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 928.133 ; gain = 659.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 928.133 ; gain = 659.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 928.133 ; gain = 659.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 928.133 ; gain = 659.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 928.133 ; gain = 659.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|nidhogg     | my_win/vsync_out_reg | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|nidhogg     | my_win/hsync_out_reg | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     4|
+|2     |CARRY4      |   222|
+|3     |DSP48E1     |     9|
+|4     |LUT1        |   186|
+|5     |LUT2        |   301|
+|6     |LUT3        |    45|
+|7     |LUT4        |   400|
+|8     |LUT5        |   164|
+|9     |LUT6        |   302|
+|10    |MMCME2_ADV  |     1|
+|11    |MUXF7       |     2|
+|12    |ODDR        |     1|
+|13    |RAMB18E1    |     1|
+|14    |RAMB18E1_1  |     1|
+|15    |RAMB18E1_10 |     1|
+|16    |RAMB18E1_11 |     1|
+|17    |RAMB18E1_12 |     1|
+|18    |RAMB18E1_13 |     1|
+|19    |RAMB18E1_2  |     1|
+|20    |RAMB18E1_3  |     1|
+|21    |RAMB18E1_4  |     1|
+|22    |RAMB18E1_5  |     1|
+|23    |RAMB18E1_6  |     1|
+|24    |RAMB18E1_7  |     1|
+|25    |RAMB18E1_8  |     1|
+|26    |RAMB18E1_9  |     1|
+|27    |RAMB36E1    |     1|
+|28    |RAMB36E1_1  |     1|
+|29    |RAMB36E1_10 |     1|
+|30    |RAMB36E1_11 |     1|
+|31    |RAMB36E1_12 |     1|
+|32    |RAMB36E1_13 |     1|
+|33    |RAMB36E1_14 |     1|
+|34    |RAMB36E1_15 |     1|
+|35    |RAMB36E1_16 |     1|
+|36    |RAMB36E1_17 |     1|
+|37    |RAMB36E1_18 |     1|
+|38    |RAMB36E1_19 |     1|
+|39    |RAMB36E1_2  |     1|
+|40    |RAMB36E1_20 |     1|
+|41    |RAMB36E1_21 |     1|
+|42    |RAMB36E1_22 |     1|
+|43    |RAMB36E1_3  |     1|
+|44    |RAMB36E1_4  |     1|
+|45    |RAMB36E1_5  |     1|
+|46    |RAMB36E1_6  |     1|
+|47    |RAMB36E1_7  |     1|
+|48    |RAMB36E1_8  |     1|
+|49    |RAMB36E1_9  |     1|
+|50    |SRL16E      |     2|
+|51    |FDRE        |   610|
+|52    |LD          |    20|
+|53    |LDC         |     3|
+|54    |IBUF        |    10|
+|55    |OBUF        |    14|
++------+------------+------+
+
+Report Instance Areas: 
++------+-------------------------+----------------------------------+------+
+|      |Instance                 |Module                            |Cells |
++------+-------------------------+----------------------------------+------+
+|1     |top                      |                                  |  2333|
+|2     |  my_clk                 |clk                               |     6|
+|3     |    inst                 |clk_clk_wiz                       |     6|
+|4     |  my_background          |background                        |   170|
+|5     |  my_board_control       |board_control                     |   403|
+|6     |  my_death_control       |death_control                     |    14|
+|7     |  my_image_crown         |image_rom_32x32__parameterized1   |     6|
+|8     |  my_image_playerL_head  |image_rom_player__parameterized1  |     7|
+|9     |  my_image_playerL_head2 |image_rom_player__parameterized2  |    16|
+|10    |  my_image_playerL_legs  |image_rom_player__parameterized3  |    17|
+|11    |  my_image_playerL_legs2 |image_rom_player__parameterized4  |    10|
+|12    |  my_image_playerR_head  |image_rom_player__parameterized5  |    24|
+|13    |  my_image_playerR_head2 |image_rom_player__parameterized6  |     7|
+|14    |  my_image_playerR_legs  |image_rom_player__parameterized7  |    10|
+|15    |  my_image_playerR_legs2 |image_rom_player__parameterized8  |    15|
+|16    |  my_image_rom           |image_rom                         |     2|
+|17    |  my_image_sign_left     |image_rom_128x128                 |    12|
+|18    |  my_image_sign_right    |image_rom_128x128__parameterized0 |    12|
+|19    |  my_image_torch_down    |image_rom_player__parameterized0  |    49|
+|20    |  my_image_torch_up      |image_rom_player                  |     8|
+|21    |  my_keyboard            |keyboard                          |   814|
+|22    |    my_PS2Receiver       |PS2Receiver                       |    98|
+|23    |      db_clk             |debouncer                         |    15|
+|24    |      db_data            |debouncer_0                       |    24|
+|25    |  my_playerL             |playerL                           |   275|
+|26    |  my_playerR             |playerR                           |   208|
+|27    |  my_sword_L             |image_rom_32x32                   |    13|
+|28    |  my_sword_R             |image_rom_32x32__parameterized0   |    13|
+|29    |  my_timing              |vga_timing                        |   112|
+|30    |  my_win                 |win                               |    38|
++------+-------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 928.133 ; gain = 659.488
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 178 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:08 . Memory (MB): peak = 928.133 ; gain = 354.496
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 928.133 ; gain = 659.488
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 305 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 23 instances were transformed.
+  LD => LDCE: 20 instances
+  LDC => LDCE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+180 Infos, 195 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 928.133 ; gain = 667.699
+INFO: [Common 17-1381] The checkpoint 'C:/__Programowanie__/Vivado/PrzemyslawKurzak/UEC_2_Project/project_0709/project_0709.runs/synth_1/nidhogg.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file nidhogg_utilization_synth.rpt -pb nidhogg_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 928.133 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 02:43:57 2020...
