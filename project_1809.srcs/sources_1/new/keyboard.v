@@ -153,7 +153,7 @@ else if ((RP_y_pos == 0) && (RP_x_sword_pos == 0))
                 
                 if (counter == 100000)
                 begin
-                    if (RP_y_pos >= 600)
+                    if (RP_y_pos >= 200)
                     begin
                         RP_y_pos_nxt <= RP_y_pos - 1;
                         counter <= 0;
